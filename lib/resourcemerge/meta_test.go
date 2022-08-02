@@ -14,8 +14,6 @@ import (
 
 func init() {
 	klog.InitFlags(flag.CommandLine)
-	_ = flag.CommandLine.Lookup("v").Value.Set("2")
-	_ = flag.CommandLine.Lookup("alsologtostderr").Value.Set("true")
 }
 
 func TestMergeOwnerRefs(t *testing.T) {
